@@ -1,9 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.work_record_admin.work_record_admin">
    <application
-        android:label="work_record_admin"
+        android:label="Mashiso"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+       <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyD9Cd7hzn439ccwzfTKouo9GtT5f5HNBrc"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
