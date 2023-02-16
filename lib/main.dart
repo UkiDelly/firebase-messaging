@@ -1,12 +1,26 @@
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'Firebase/messaging_service.dart';
 import 'views/home.dart';
 import 'preferences.dart';
+
+MessagingService _msgService = MessagingService();
+
+/// Top level function to handle incoming messages when the app is in the background
+Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
+  print(" --- background message received ---");
+  print(message.notification!.title);
+  print(message.notification!.body);
+}
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
 
+  //Firebase
+  FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
+  await _msgService.init();
   await LoginPreferences.init();
   runApp(const MyApp());
 }

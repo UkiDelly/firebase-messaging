@@ -29,6 +29,13 @@
             {
               "client_id": "1037434767632-63791n93krg6uu5j94e4t2gubr7t28de.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "1037434767632-8f9cpluqsdgrqc13akojp8e0j3s6jc5u.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mashiso.employeeApp"
+              }
             }
           ]
         }
@@ -36,9 +43,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1037434767632:android:b6567001123983b0ae7d95",
+        "mobilesdk_app_id": "1:1037434767632:android:22fc56ac081a7e64ae7d95",
         "android_client_info": {
-          "package_name": "com.example.work_record_app"
+          "package_name": "com.mashiso.employee_app"
         }
       },
       "oauth_client": [
@@ -58,6 +65,13 @@
             {
               "client_id": "1037434767632-63791n93krg6uu5j94e4t2gubr7t28de.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "1037434767632-8f9cpluqsdgrqc13akojp8e0j3s6jc5u.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mashiso.employeeApp"
+              }
             }
           ]
         }
